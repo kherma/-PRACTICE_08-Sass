@@ -167,10 +167,16 @@ input[class^='btn-']:hover {
   margin: 0;
   padding: 0; }
 
+html {
+  overflow: hidden;
+  height: 100%; }
+
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  overflow: auto;
+  height: 100%; }
 
 a {
   text-decoration: none;
@@ -362,6 +368,39 @@ img {
     height: 50px;
     border-radius: 50%;
     margin-right: 0.5rem; }
+
+#contact-form .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem; }
+  #contact-form .text-fields > *:focus {
+    outline-color: #ffbc00; }
+  #contact-form .text-fields .name-input {
+    grid-area: name; }
+  #contact-form .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-form .text-fields .email-input {
+    grid-area: email; }
+  #contact-form .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-form .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-form .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+#contact-form button[type='submit'] {
+  width: 50%; }
+
+#contact-info .info {
+  justify-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+#contact-banner {
+  font-size: 4rem; }
 
 #main-footer {
   background: #333;
