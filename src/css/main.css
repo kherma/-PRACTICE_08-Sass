@@ -252,6 +252,18 @@ img {
   color: #ffbc00;
   margin-bottom: 1rem; }
 
+#about-skills .progress {
+  overflow: hidden;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-skills .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #ffbc00; }
+
 #main-footer {
   background: #333;
   color: #fff;

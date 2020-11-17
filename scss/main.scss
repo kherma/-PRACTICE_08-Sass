@@ -236,6 +236,23 @@ img {
 			margin-bottom: 1rem;
 		}
 	}
+
+	&-skills {
+		.progress {
+			overflow: hidden;
+			height: 20px;
+			background-color: $medium-color;
+			border-radius: 5px;
+			margin-bottom: 0.6rem;
+
+			div {
+				height: 100%;
+				color: $light-color;
+				text-align: center;
+				background-color: $main-color;
+			}
+		}
+	}
 }
 
 // Footer
