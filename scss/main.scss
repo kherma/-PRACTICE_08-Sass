@@ -1,35 +1,93 @@
 // Imports
 @import "variables";
+@import "utilities";
 
 // CSS Reset
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 // Global
 body {
-  font-family: $main-font;
-  line-height: 1.6;
-  background-color: $light-color;
+  	font-family: $main-font;
+  	line-height: 1.6;
+  	background-color: $background-color;
 }
 
 a {
-  text-decoration: none;
-  color: $dark-color;
+  	text-decoration: none;
+  	color: $dark-color;
 }
 
 ul {
-  list-style: none;
+  	list-style: none;
 }
 
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
+h2, h3, h4 {
+  	text-transform: uppercase;
 }
 
 img {
-  width: 100%;
+  	width: 100%;
+}
+
+// Header
+#header {
+	&-home {
+		background: $bg-image no-repeat center center/cover;
+		height: 100vh;
+		color: $light-color;
+
+		.header-content {
+			text-align: center;
+			padding-top: 20%;
+	
+			h1 {
+				font-size: 4rem;
+				line-height: 1.2;
+			}
+		}
+	}
+}
+
+// Logo
+#logo {
+	width: 70px;
+	height: 70px;
+	color: $light-color;
+	text-transform: uppercase;
+}
+
+// Menu
+#main-nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		padding: 1rem 1.5rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: $light-color;
+		text-transform: uppercase;
+		border-bottom: 3px transparent solid;
+		padding-bottom: 0.5rem;
+		transition: border-color 0.5s;
+
+		&:hover {
+			border-color: $medium-color;
+		}
+
+		&.current {
+			border-color: $main-color;
+		}
+	}
 }
