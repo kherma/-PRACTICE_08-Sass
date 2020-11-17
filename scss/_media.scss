@@ -1,0 +1,205 @@
+// Tablets & smaller
+@media(max-width: 800px) {
+    #header-home {
+        height: 30rem;
+
+        .header-content {
+            padding-top: 5rem;
+        }
+    }
+}
+
+// Smartphones
+@media(max-width: 500px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+        &-home {
+            height: 10rem;
+            border-bottom: 3px solid $main-color;
+            
+            .header-content {
+                display: none;
+            }
+        }
+
+        &-inner {
+            height: 10rem;
+            background-position: center center;
+        }
+    }
+
+    // Stack Grid Columns
+    #home-specials .specials,
+    #home-stats .stats,
+    #home-process .process,
+    #about-testimonials .testimonials,
+    #contact-info .info,
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    // Specials & Stats
+    #home {
+        &-specials {
+            .specials div {
+                border-bottom: 1px solid $medium-color;
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        &-stats {
+            .stats div {
+                padding: 2rem 0 1rem 0;
+            }
+        }
+    }
+
+    // About
+    #about {
+        &-section {
+            .about-info {
+                grid-template-areas: 
+                    'bioimage'
+                    'bio'
+                    'aw1' 
+                    'aw2' 
+                    'aw3';
+                grid-gap: 1.5rem;
+            }
+        }
+
+        &-logos {
+            display: none;
+        }
+    }
+
+    // Contact
+    #contact {
+        &-form {
+            .text-fields {
+                grid-template-areas: 
+                'name' 
+                'email'
+                'subject' 
+                'phone'
+				'message';
+            }
+        }
+
+        &-info {
+            .info {
+                div {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid #555;
+                    width: 80%;
+
+                    &:last-child {
+                        border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &-banner {
+            font-size: 1rem;
+        }
+    }
+
+    // Footer
+    #main-footer {
+        height: 7rem;
+        
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+        }
+    }
+}
+
+// Landscape
+@media(max-height: 500px) {
+    #header-home {
+        .header-content {
+            padding-top: 3rem;;
+        }
+    }
+
+    #home-specials .specials,
+    #home-stats .stats,
+    #home-process .process,
+    #about-testimonials .testimonials,
+    #contact-info .info,
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    // About
+    #about {
+        &-section {
+            .about-info {
+                grid-template-areas: 
+                    'bioimage'
+                    'bio'
+                    'aw1' 
+                    'aw2' 
+                    'aw3';
+                grid-gap: 1.5rem;
+            }
+        }
+
+        &-logos {
+            display: none;
+        }
+    }
+
+    // Contact
+    #contact {
+        &-form {
+            .text-fields {
+                grid-template-areas: 
+                'name' 
+                'email'
+                'subject' 
+                'phone'
+				'message';
+            }
+        }
+
+        &-info {
+            .info {
+                div {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid #555;
+                    width: 80%;
+
+                    &:last-child {
+                        border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &-banner {
+            font-size: 1rem;
+        }
+    }
+}   
