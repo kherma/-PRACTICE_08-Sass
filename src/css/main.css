@@ -177,11 +177,13 @@ img {
     transition: all 1s; }
     #home-process .process-icon:hover {
       background: #ffbc00;
+      color: #fff;
       width: 90px;
       height: 90px;
       line-height: 90px; }
       #home-process .process-icon:hover .process-step {
-        background: #333; }
+        background: #333;
+        color: #fff; }
   #home-process .process-step {
     position: absolute;
     top: 0;
@@ -195,3 +197,26 @@ img {
     line-height: 15px;
     padding: 1rem;
     transition: all 1s; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; }
+    #main-footer .footer-content .socials > * {
+      color: #fff;
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      padding: 0.5rem;
+      border-radius: 50%;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      transition: all 0.5s; }
+      #main-footer .footer-content .socials > *:hover {
+        background: #ffbc00; }

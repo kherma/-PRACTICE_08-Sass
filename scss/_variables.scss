@@ -11,3 +11,12 @@ $background-color: #f4f4f4;
 // Layout
 $web-width: 1280px;
 $bg-image: url("../img/showcase.jpg");
+
+// Set Text Color
+@function set-color($color) {
+    @if(lightness($color) > 50) {
+        @return $dark-color;
+    } @else {
+        @return $light-color;
+    }
+}

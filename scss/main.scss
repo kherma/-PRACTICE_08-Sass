@@ -151,7 +151,7 @@ img {
 			&-icon {
 				border-radius: 50%;
 				background: $dark-color;
-				color: $light-color;
+				color: set-color($dark-color);
 				padding: 2rem;
 				width: 70px;
 				height: 70px;
@@ -162,12 +162,14 @@ img {
 
 				&:hover {
 					background: $main-color;
+					color: set-color($main-color);
 					width: 90px;
 					height: 90px;
 					line-height: 90px;
 
 					.process-step {
 						background: $dark-color;
+						color: set-color($dark-color);
 					}
 				}
 			}
@@ -178,7 +180,7 @@ img {
 				right: 0;
 				font-size: 28px;
 				background: $main-color;
-				color: $light-color;
+				color: set-color($main-color);
 				border-radius: 50%;
 				height: 15px;
 				width: 15px;
@@ -188,4 +190,35 @@ img {
 			}
 		}
 	}	
+}
+
+// Footer
+#main-footer {
+	background: $dark-color;
+	color: set-color($dark-color);
+	height: 5rem;
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+
+		.socials > *{
+			color: $light-color;
+			margin-right: 1rem;
+			border: 2px solid $light-color;
+			padding: 0.5rem;
+			border-radius: 50%;
+			text-align: center;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			transition: all 0.5s;
+
+			&:hover {
+				background: $main-color;
+			}
+		}
+	}
 }
