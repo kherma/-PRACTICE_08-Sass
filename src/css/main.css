@@ -74,6 +74,22 @@ input[class^='btn-']:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #fff;
+  color: #333; }
+
+.bg-medium {
+  background: #ccc;
+  color: #333; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -106,6 +122,11 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
 #logo {
   width: 70px;
@@ -197,6 +218,39 @@ img {
     line-height: 15px;
     padding: 1rem;
     transition: all 1s; }
+
+#about-section .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem; }
+
+#about-section .bio-image {
+  grid-area: bioimage; }
+
+#about-section .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding-bottom: 0.8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+#about-section .award-1 {
+  grid-area: aw1; }
+
+#about-section .award-2 {
+  grid-area: aw2; }
+
+#about-section .award-3 {
+  grid-area: aw3; }
+
+#about-section .award-1 .fas,
+#about-section .award-2 .fas,
+#about-section .award-3 .fas {
+  color: #ffbc00;
+  margin-bottom: 1rem; }
 
 #main-footer {
   background: #333;
