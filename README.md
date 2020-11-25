@@ -1,5 +1,4 @@
 # -PRACTICE_08-Sass
 
 ## Practice Project - course project;
-## Side Project - personal project;
-## School Project - homework project;
+## You can check it here: https://stoic-cray-f8ac53.netlify.app/
